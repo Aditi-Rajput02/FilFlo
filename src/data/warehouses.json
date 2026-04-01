@@ -1,0 +1,9 @@
+[
+  { "warehouse_id": "WH-BLR-01", "name": "Bangalore Central Warehouse", "city": "Bangalore", "address": "Plot 14, KIADB Industrial Area, Peenya, Bangalore - 560058", "capacity_units": 50000, "manager": "Ravi Kumar", "contact": "+91-9876543210", "serves_platforms": ["Blinkit", "Zepto", "Instamart"] },
+  { "warehouse_id": "WH-BLR-02", "name": "Bangalore East Warehouse", "city": "Bangalore", "address": "Survey No. 88, Whitefield Main Road, Bangalore - 560066", "capacity_units": 30000, "manager": "Priya Sharma", "contact": "+91-9876543211", "serves_platforms": ["Blinkit", "Zepto", "Instamart"] },
+  { "warehouse_id": "WH-MUM-01", "name": "Mumbai West Warehouse", "city": "Mumbai", "address": "Unit 5, Andheri Industrial Estate, Andheri West, Mumbai - 400058", "capacity_units": 45000, "manager": "Amit Desai", "contact": "+91-9876543212", "serves_platforms": ["Blinkit", "Zepto"] },
+  { "warehouse_id": "WH-MUM-02", "name": "Mumbai East Warehouse", "city": "Mumbai", "address": "Shed 22, Thane Industrial Zone, Thane - 400601", "capacity_units": 25000, "manager": "Sneha Patil", "contact": "+91-9876543213", "serves_platforms": ["Instamart"] },
+  { "warehouse_id": "WH-DEL-01", "name": "Delhi NCR Warehouse", "city": "Delhi", "address": "Plot 7, Udyog Vihar Phase 4, Gurgaon - 122015", "capacity_units": 60000, "manager": "Vikram Singh", "contact": "+91-9876543214", "serves_platforms": ["Blinkit", "Zepto", "Instamart"] },
+  { "warehouse_id": "WH-DEL-02", "name": "Noida Warehouse", "city": "Noida", "address": "A-45, Sector 63, Noida - 201301", "capacity_units": 20000, "manager": "Anjali Gupta", "contact": "+91-9876543215", "serves_platforms": ["Instamart"] },
+  { "warehouse_id": "WH-HYD-01", "name": "Hyderabad Warehouse", "city": "Hyderabad", "address": "Plot 33, IDA Jeedimetla, Hyderabad - 500055", "capacity_units": 35000, "manager": "Suresh Reddy", "contact": "+91-9876543216", "serves_platforms": ["Blinkit", "Zepto"] }
+]

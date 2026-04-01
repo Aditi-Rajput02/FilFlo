@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import MermaidDiagram from '../components/MermaidDiagram'
 
@@ -130,6 +131,8 @@ const s = {
 }
 
 export default function DemandPrediction() {
+  const navigate = useNavigate()
+
   return (
     <div style={s.page}>
       <Navbar title="Phase 2 — Demand Prediction" />
@@ -139,6 +142,47 @@ export default function DemandPrediction() {
         <div style={{ background: '#1e293b', borderLeft: '3px solid #6366f1', padding: '14px 18px', borderRadius: '0 8px 8px 0', color: '#94a3b8', fontSize: '14px', marginBottom: '40px', lineHeight: 1.6 }}>
           AI forecasts demand by SKU × location × day using rolling 7-day averages with
           festival and weekend multipliers — so you never get caught off guard.
+        </div>
+
+        {/* ── Demo CTA ── */}
+        <div style={{
+          background: 'linear-gradient(135deg, #1a1f2e 0%, #0f1117 100%)',
+          border: '1px solid #60a5fa',
+          borderRadius: '12px',
+          padding: '24px 28px',
+          marginBottom: '40px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          flexWrap: 'wrap',
+          gap: '16px',
+        }}>
+          <div>
+            <div style={{ fontSize: '15px', fontWeight: 700, color: '#f1f5f9', marginBottom: '6px' }}>
+              📈 See it in action — Live Demo
+            </div>
+            <div style={{ fontSize: '13px', color: '#64748b', lineHeight: 1.6 }}>
+              Explore 22 real demand forecasts with sparkline charts, confidence scores, spike detection
+              and platform filters — all powered by <code style={{ color: '#60a5fa' }}>demand_forecasts.json</code>.
+            </div>
+          </div>
+          <button
+            onClick={() => navigate('/demo/demand')}
+            style={{
+              background: '#2563eb',
+              color: '#fff',
+              border: 'none',
+              borderRadius: '8px',
+              padding: '12px 24px',
+              fontSize: '14px',
+              fontWeight: 700,
+              cursor: 'pointer',
+              whiteSpace: 'nowrap',
+              boxShadow: '0 0 20px rgba(96,165,250,0.3)',
+            }}
+          >
+            View Live Demo →
+          </button>
         </div>
 
         {/* Features */}

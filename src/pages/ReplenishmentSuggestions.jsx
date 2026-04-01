@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import MermaidDiagram from '../components/MermaidDiagram'
 
@@ -79,6 +80,8 @@ const s = {
 }
 
 export default function ReplenishmentSuggestions() {
+  const navigate = useNavigate()
+
   return (
     <div style={s.page}>
       <Navbar title="Phase 3 — Replenishment Suggestions" />
@@ -88,6 +91,47 @@ export default function ReplenishmentSuggestions() {
         <div style={{ background: '#1e293b', borderLeft: '3px solid #6366f1', padding: '14px 18px', borderRadius: '0 8px 8px 0', color: '#94a3b8', fontSize: '14px', marginBottom: '40px', lineHeight: 1.6 }}>
           Auto-triggers reorder suggestions when stock falls below safety threshold.
           No manual checking. No Excel. Just smart, automated alerts with exact quantities and warehouse routing.
+        </div>
+
+        {/* ── Demo CTA ── */}
+        <div style={{
+          background: 'linear-gradient(135deg, #1a1f2e 0%, #0f1117 100%)',
+          border: '1px solid #a78bfa',
+          borderRadius: '12px',
+          padding: '24px 28px',
+          marginBottom: '40px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          flexWrap: 'wrap',
+          gap: '16px',
+        }}>
+          <div>
+            <div style={{ fontSize: '15px', fontWeight: 700, color: '#f1f5f9', marginBottom: '6px' }}>
+              🧠 See it in action — Live Demo
+            </div>
+            <div style={{ fontSize: '13px', color: '#64748b', lineHeight: 1.6 }}>
+              Explore 15 real replenishment suggestions with urgency levels, auto-order status, estimated costs
+              and platform filters — powered by <code style={{ color: '#a78bfa' }}>replenishment_suggestions.json</code>.
+            </div>
+          </div>
+          <button
+            onClick={() => navigate('/demo/replenishment')}
+            style={{
+              background: '#7c3aed',
+              color: '#fff',
+              border: 'none',
+              borderRadius: '8px',
+              padding: '12px 24px',
+              fontSize: '14px',
+              fontWeight: 700,
+              cursor: 'pointer',
+              whiteSpace: 'nowrap',
+              boxShadow: '0 0 20px rgba(167,139,250,0.3)',
+            }}
+          >
+            View Live Demo →
+          </button>
         </div>
 
         {/* Features */}

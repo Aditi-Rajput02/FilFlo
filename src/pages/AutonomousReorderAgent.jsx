@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import MermaidDiagram from '../components/MermaidDiagram'
 
@@ -145,6 +146,8 @@ const s = {
 }
 
 export default function AutonomousReorderAgent() {
+  const navigate = useNavigate()
+
   return (
     <div style={s.page}>
       <Navbar title="Phase 6 — Autonomous Reorder Agent" />
@@ -154,6 +157,47 @@ export default function AutonomousReorderAgent() {
         <div style={{ background: '#1e293b', borderLeft: '3px solid #94a3b8', padding: '14px 18px', borderRadius: '0 8px 8px 0', color: '#94a3b8', fontSize: '14px', marginBottom: '40px', lineHeight: 1.6 }}>
           The final evolution of FilFlo — a fully autonomous AI agent that monitors inventory 24/7,
           makes ordering decisions, and places orders with suppliers <strong style={{ color: '#e2e8f0' }}>without any human approval</strong> when confidence is high enough.
+        </div>
+
+        {/* ── Demo CTA ── */}
+        <div style={{
+          background: 'linear-gradient(135deg, #0d0a1f 0%, #0f1117 100%)',
+          border: '1px solid #a78bfa',
+          borderRadius: '12px',
+          padding: '24px 28px',
+          marginBottom: '40px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          flexWrap: 'wrap',
+          gap: '16px',
+        }}>
+          <div>
+            <div style={{ fontSize: '15px', fontWeight: 700, color: '#f1f5f9', marginBottom: '6px' }}>
+              🤖 See the Agent Think — Live Interactive Demo
+            </div>
+            <div style={{ fontSize: '13px', color: '#64748b', lineHeight: 1.6 }}>
+              Pick any SKU, press <strong style={{ color: '#a78bfa' }}>▶ Run Agent</strong> and watch it scan inventory, calculate urgency,
+              score confidence, and decide — autonomously. Powered by <code style={{ color: '#a78bfa' }}>agent_logs.json</code>.
+            </div>
+          </div>
+          <button
+            onClick={() => navigate('/demo/autonomous-agent')}
+            style={{
+              background: '#7c3aed',
+              color: '#fff',
+              border: 'none',
+              borderRadius: '8px',
+              padding: '12px 24px',
+              fontSize: '14px',
+              fontWeight: 700,
+              cursor: 'pointer',
+              whiteSpace: 'nowrap',
+              boxShadow: '0 0 20px rgba(167,139,250,0.3)',
+            }}
+          >
+            View Live Demo →
+          </button>
         </div>
 
         <div style={s.section}>

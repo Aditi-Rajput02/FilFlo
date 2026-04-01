@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import MermaidDiagram from '../components/MermaidDiagram'
 
@@ -85,6 +86,8 @@ const s = {
 }
 
 export default function POGenerator() {
+  const navigate = useNavigate()
+
   return (
     <div style={s.page}>
       <Navbar title="Phase 4 — PO Generator" />
@@ -94,6 +97,47 @@ export default function POGenerator() {
         <div style={{ background: '#1e293b', borderLeft: '3px solid #6366f1', padding: '14px 18px', borderRadius: '0 8px 8px 0', color: '#94a3b8', fontSize: '14px', marginBottom: '40px', lineHeight: 1.6 }}>
           Auto-creates Purchase Orders like: <strong style={{ color: '#e2e8f0' }}>"Send 80 units of Ashwagandha 60-cap from Bangalore Warehouse to Blinkit Koramangala by 6 AM tomorrow."</strong>
           {' '}No human needed to write this. FilFlo does it automatically.
+        </div>
+
+        {/* ── Demo CTA ── */}
+        <div style={{
+          background: 'linear-gradient(135deg, #1a1f2e 0%, #0f1117 100%)',
+          border: '1px solid #f97316',
+          borderRadius: '12px',
+          padding: '24px 28px',
+          marginBottom: '40px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          flexWrap: 'wrap',
+          gap: '16px',
+        }}>
+          <div>
+            <div style={{ fontSize: '15px', fontWeight: 700, color: '#f1f5f9', marginBottom: '6px' }}>
+              📋 See it in action — Live Demo
+            </div>
+            <div style={{ fontSize: '13px', color: '#64748b', lineHeight: 1.6 }}>
+              Explore 15 real purchase orders with status tracking, supplier info, auto vs manual source,
+              delivery dates and cost breakdown — powered by <code style={{ color: '#f97316' }}>purchase_orders.json</code>.
+            </div>
+          </div>
+          <button
+            onClick={() => navigate('/demo/po-generator')}
+            style={{
+              background: '#ea580c',
+              color: '#fff',
+              border: 'none',
+              borderRadius: '8px',
+              padding: '12px 24px',
+              fontSize: '14px',
+              fontWeight: 700,
+              cursor: 'pointer',
+              whiteSpace: 'nowrap',
+              boxShadow: '0 0 20px rgba(249,115,22,0.3)',
+            }}
+          >
+            View Live Demo →
+          </button>
         </div>
 
         {/* Features */}

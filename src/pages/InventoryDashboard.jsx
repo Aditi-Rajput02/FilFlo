@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import MermaidDiagram from '../components/MermaidDiagram'
 
@@ -133,6 +134,8 @@ const s = {
 }
 
 export default function InventoryDashboard() {
+  const navigate = useNavigate()
+
   return (
     <div style={s.page}>
       <Navbar title="Phase 1 — Inventory Dashboard" />
@@ -142,6 +145,47 @@ export default function InventoryDashboard() {
         <div style={s.subtitle}>
           Real-time stock visibility across all dark stores on Blinkit, Zepto & Instamart.
           Replaces manual Excel tracking with a live, auto-refreshing dashboard.
+        </div>
+
+        {/* ── Demo CTA ── */}
+        <div style={{
+          background: 'linear-gradient(135deg, #1a1f2e 0%, #0f1117 100%)',
+          border: '1px solid #6366f1',
+          borderRadius: '12px',
+          padding: '24px 28px',
+          marginBottom: '40px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          flexWrap: 'wrap',
+          gap: '16px',
+        }}>
+          <div>
+            <div style={{ fontSize: '15px', fontWeight: 700, color: '#f1f5f9', marginBottom: '6px' }}>
+              🚀 See it in action — Live Demo
+            </div>
+            <div style={{ fontSize: '13px', color: '#64748b', lineHeight: 1.6 }}>
+              Explore the actual inventory dashboard with real sample data from 22 dark stores across Blinkit, Zepto & Instamart.
+              Filter by platform, status, and search by SKU or store name.
+            </div>
+          </div>
+          <button
+            onClick={() => navigate('/demo/inventory')}
+            style={{
+              background: '#6366f1',
+              color: '#fff',
+              border: 'none',
+              borderRadius: '8px',
+              padding: '12px 24px',
+              fontSize: '14px',
+              fontWeight: 700,
+              cursor: 'pointer',
+              whiteSpace: 'nowrap',
+              boxShadow: '0 0 20px rgba(99,102,241,0.3)',
+            }}
+          >
+            View Live Dashboard →
+          </button>
         </div>
 
         {/* Features */}
