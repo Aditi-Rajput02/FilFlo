@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import MermaidDiagram from '../components/MermaidDiagram'
 
 const hldDiagram = `flowchart LR
-    A["🛒 Blinkit API"] --> D["FilFlo\nData Ingestion Layer"]
+    A["🛒 Blinkit API"] --> D["RevQ\nData Ingestion Layer"]
     B["⚡ Zepto API"] --> D
     C["🛍️ Instamart API"] --> D
     
@@ -112,7 +112,7 @@ const lldDiagram = `flowchart TD
 const features = [
   { icon: '🏪', title: 'Store-wise Stock View', desc: 'See current stock for every SKU at every dark store across Blinkit, Zepto, and Instamart in one table.' },
   { icon: '🔴', title: 'Low Stock Alerts', desc: 'Automatic red alerts when any SKU at any store drops below the configured safety threshold.' },
-  { icon: '📊', title: 'Days Remaining Estimate', desc: 'Based on average daily sales, FilFlo shows "X days of stock remaining" for each SKU × store combination.' },
+  { icon: '📊', title: 'Days Remaining Estimate', desc: 'Based on average daily sales, RevQ shows "X days of stock remaining" for each SKU × store combination.' },
   { icon: '🔄', title: 'Auto-Refresh Every Hour', desc: 'Data syncs automatically every 60 minutes from all platforms. No manual refresh needed.' },
 ]
 

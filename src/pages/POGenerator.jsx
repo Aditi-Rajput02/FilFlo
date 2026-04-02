@@ -51,7 +51,7 @@ const features = [
   { icon: '📄', title: 'Auto-Generated PO Document', desc: 'Creates a complete Purchase Order with PO ID, SKU details, quantity, source warehouse, destination store, and ETA.' },
   { icon: '✅', title: 'One-Click Approval', desc: 'Ops manager gets a notification and can approve or reject the PO with a single click. Or enable full auto-approval.' },
   { icon: '🔢', title: 'Unique PO ID System', desc: 'Every PO gets a unique ID (PO-20260331-0042) for tracking, audit trail, and supplier communication.' },
-  { icon: '🚚', title: 'Dispatch Instruction', desc: 'Once approved, FilFlo sends a dispatch instruction to the warehouse team with all details needed to ship.' },
+  { icon: '🚚', title: 'Dispatch Instruction', desc: 'Once approved, RevQ sends a dispatch instruction to the warehouse team with all details needed to ship.' },
 ]
 
 const samplePO = {
@@ -96,7 +96,7 @@ export default function POGenerator() {
         <h1 style={s.title}>Purchase Order (PO) Generator</h1>
         <div style={{ background: '#1e293b', borderLeft: '3px solid #6366f1', padding: '14px 18px', borderRadius: '0 8px 8px 0', color: '#94a3b8', fontSize: '14px', marginBottom: '40px', lineHeight: 1.6 }}>
           Auto-creates Purchase Orders like: <strong style={{ color: '#e2e8f0' }}>"Send 80 units of Ashwagandha 60-cap from Bangalore Warehouse to Blinkit Koramangala by 6 AM tomorrow."</strong>
-          {' '}No human needed to write this. FilFlo does it automatically.
+          {' '}No human needed to write this. RevQ does it automatically.
         </div>
 
         {/* ── Demo CTA ── */}

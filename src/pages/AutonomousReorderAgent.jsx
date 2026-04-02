@@ -155,7 +155,7 @@ export default function AutonomousReorderAgent() {
         <div style={s.badge}>PHASE 6 · FUTURE</div>
         <h1 style={s.title}>Autonomous Reorder Agent</h1>
         <div style={{ background: '#1e293b', borderLeft: '3px solid #94a3b8', padding: '14px 18px', borderRadius: '0 8px 8px 0', color: '#94a3b8', fontSize: '14px', marginBottom: '40px', lineHeight: 1.6 }}>
-          The final evolution of FilFlo — a fully autonomous AI agent that monitors inventory 24/7,
+          The final evolution of RevQ — a fully autonomous AI agent that monitors inventory 24/7,
           makes ordering decisions, and places orders with suppliers <strong style={{ color: '#e2e8f0' }}>without any human approval</strong> when confidence is high enough.
         </div>
 

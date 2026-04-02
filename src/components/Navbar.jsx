@@ -14,7 +14,7 @@ export default function Navbar({ title }) {
         textTransform: 'uppercase',
         marginBottom: '4px',
       }}>
-        FilFlo
+        RevQ
       </div>
       <h1 style={{
         fontSize: '22px',

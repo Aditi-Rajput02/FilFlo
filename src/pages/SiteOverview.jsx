@@ -22,7 +22,7 @@ const sections = [
         label: 'Brand Journey',
         path: '/journey',
         icon: '🗺️',
-        desc: 'End-to-end FilFlo walkthrough — how a brand goes from Excel chaos to AI automation',
+        desc: 'End-to-end RevQ walkthrough — how a brand goes from Excel chaos to AI automation',
         tag: 'STORY',
         tagColor: '#a78bfa',
         tagBg: '#1e1b4b',
@@ -230,7 +230,7 @@ export default function SiteOverview() {
         {/* Header */}
         <div style={s.topRow}>
           <div style={s.badge}>SITE MAP · ALL ROUTES</div>
-          <div style={s.title}>FilFlo — Complete Site Overview</div>
+          <div style={s.title}>RevQ — Complete Site Overview</div>
           <div style={s.subtitle}>
             Every page, feature, and demo in one place. Click any card to navigate directly.
           </div>
@@ -282,7 +282,7 @@ export default function SiteOverview() {
         {/* Footer */}
         <div style={s.footer}>
           <span style={{ fontSize: '12px', color: '#475569' }}>
-            FilFlo · AI-Powered Autonomous Inventory Replenishment · 6 Phases · 14 Routes
+            RevQ · AI-Powered Autonomous Inventory Replenishment · 6 Phases · 14 Routes
           </span>
           <button
             style={{ background: '#6366f1', color: '#fff', border: 'none', borderRadius: '6px', padding: '8px 18px', fontSize: '13px', fontWeight: 600, cursor: 'pointer' }}

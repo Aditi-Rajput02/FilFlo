@@ -45,7 +45,7 @@ export default function AppShell({ children }) {
             flexShrink: 0,
           }}
         >
-          FilFlo
+          RevQ
         </span>
 
         {/* Desktop nav links */}
@@ -145,7 +145,7 @@ export default function AppShell({ children }) {
         background: '#0d1117',
       }}>
         <div>
-          <span style={{ color: '#6366f1', fontWeight: 700, fontSize: '16px', marginRight: '12px' }}>FilFlo</span>
+          <span style={{ color: '#6366f1', fontWeight: 700, fontSize: '16px', marginRight: '12px' }}>RevQ</span>
           <span style={{ color: '#334155', fontSize: '13px' }}>AI-Powered Autonomous Inventory Replenishment</span>
         </div>
         <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
@@ -161,7 +161,7 @@ export default function AppShell({ children }) {
             </span>
           ))}
         </div>
-        <span style={{ color: '#1e293b', fontSize: '12px' }}>© 2026 FilFlo</span>
+        <span style={{ color: '#1e293b', fontSize: '12px' }}>© 2026 RevQ</span>
       </footer>
 
       {/* Responsive style for hamburger */}

@@ -5,7 +5,7 @@ const phases = [
   {
     label: 'BRAND JOURNEY',
     tag: null,
-    title: 'End-to-End FilFlo Walkthrough',
+    title: 'End-to-End RevQ Walkthrough',
     desc: 'How a brand goes from manual Excel chaos to fully automated AI-driven inventory management',
     path: '/journey',
     buttons: [{ label: 'View', type: 'view' }],
@@ -99,7 +99,7 @@ export default function Home() {
         <div style={s.hero}>
           <h1 style={s.heroTitle}>AI-Powered Autonomous Inventory Replenishment</h1>
           <p style={s.heroDesc}>
-            FilFlo is a smart AI manager for brands selling on Blinkit, Zepto & Instamart.
+            RevQ is a smart AI manager for brands selling on Blinkit, Zepto & Instamart.
             It predicts demand, detects stockouts before they happen, and auto-generates
             purchase orders — replacing 40+ hours/week of manual Excel work.
           </p>

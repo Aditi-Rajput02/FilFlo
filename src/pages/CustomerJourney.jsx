@@ -3,7 +3,7 @@ import MermaidDiagram from '../components/MermaidDiagram'
 
 const journeyFlow = `flowchart TD
     A["🛒 Brand sells on Blinkit / Zepto / Instamart"]
-    B["📊 Sales data flows into FilFlo every hour"]
+    B["📊 Sales data flows into RevQ every hour"]
     C["🤖 AI Engine analyzes SKU × Store × Day"]
     D{"Stock < Threshold?"}
     E["✅ No action needed — stock is healthy"]
@@ -54,20 +54,20 @@ const steps = [
   {
     num: '01',
     color: '#6366f1',
-    title: 'Brand Onboards FilFlo',
-    desc: 'Zindagi Naturals connects their Blinkit/Zepto seller accounts to FilFlo. Historical sales data (last 90 days) is ingested automatically.',
+    title: 'Brand Onboards RevQ',
+    desc: 'Zindagi Naturals connects their Blinkit/Zepto seller accounts to RevQ. Historical sales data (last 90 days) is ingested automatically.',
   },
   {
     num: '02',
     color: '#3b82f6',
     title: 'Real-Time Data Sync',
-    desc: 'Every hour, FilFlo pulls live stock levels from all 120 dark stores across 3 platforms. No manual entry. No Excel.',
+    desc: 'Every hour, RevQ pulls live stock levels from all 120 dark stores across 3 platforms. No manual entry. No Excel.',
   },
   {
     num: '03',
     color: '#8b5cf6',
     title: 'AI Demand Prediction',
-    desc: 'FilFlo\'s AI forecasts demand for each SKU at each store for the next 7 days — factoring in weekends, festivals, and local trends.',
+    desc: 'RevQ\'s AI forecasts demand for each SKU at each store for the next 7 days — factoring in weekends, festivals, and local trends.',
   },
   {
     num: '04',
@@ -79,7 +79,7 @@ const steps = [
     num: '05',
     color: '#f97316',
     title: 'PO Auto-Generated',
-    desc: 'FilFlo creates: "Send 80 units of Ashwagandha 60-cap from Bangalore Warehouse to Blinkit Koramangala by tomorrow 6 AM."',
+    desc: 'RevQ creates: "Send 80 units of Ashwagandha 60-cap from Bangalore Warehouse to Blinkit Koramangala by tomorrow 6 AM."',
   },
   {
     num: '06',
@@ -149,7 +149,7 @@ export default function CustomerJourney() {
     <div style={s.page}>
       <Navbar title="Brand Journey" />
       <div style={s.container}>
-        <h1 style={s.title}>Brand Journey — End-to-End FilFlo Walkthrough</h1>
+        <h1 style={s.title}>Brand Journey — End-to-End RevQ Walkthrough</h1>
         <div style={s.subtitle}>
           A single brand's path from manual Excel chaos → fully automated AI-driven inventory management
         </div>

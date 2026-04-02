@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import MermaidDiagram from '../components/MermaidDiagram'
 
 const hldDiagram = `flowchart LR
-    A["🛒 Blinkit\nSeller API"] --> D["🔄 FilFlo\nUnified Sync Layer"]
+    A["🛒 Blinkit\nSeller API"] --> D["🔄 RevQ\nUnified Sync Layer"]
     B["⚡ Zepto\nSeller API"] --> D
     C["🛍️ Instamart\nSeller API"] --> D
     D --> E["📦 Unified\nInventory DB"]
@@ -42,7 +42,7 @@ const features = [
   { icon: '🔄', title: 'Unified Sync Every 30 Min', desc: 'Pulls stock data from Blinkit, Zepto, and Instamart simultaneously every 30 minutes into one unified database.' },
   { icon: '⚖️', title: 'Cross-Platform Rebalancing', desc: 'Detects when one platform is overstocked while another is understocked — and suggests rebalancing moves.' },
   { icon: '🗂️', title: 'Single Source of Truth', desc: 'One dashboard shows all platforms. No switching between 3 different seller portals. Everything in one place.' },
-  { icon: '🔧', title: 'Schema Normalization', desc: 'Each platform has different API formats. FilFlo normalizes everything into a unified schema automatically.' },
+  { icon: '🔧', title: 'Schema Normalization', desc: 'Each platform has different API formats. RevQ normalizes everything into a unified schema automatically.' },
 ]
 
 const s = {
